@@ -30,7 +30,7 @@ mv _build/html/ docs/
 # Change directory to docs/ and add a .nojekyll file to trick out GitHub's Jekyll default style
 echo "Adding a .nojekyll flag"
 cd docs/ && touch .nojekyll
-cd ../
+cd ..
 
 # Add, commit and push up to GitHub
 echo "Syncing to GitHub"
