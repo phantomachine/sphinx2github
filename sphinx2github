@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+# ON YOUR LOCAL MACHINE
+# --------------------------------------------------------------------------
+# This BASH script assume you have your current directory preset as "origin"
+# for your remote master repo. If not do this:
+#
+#   git init
+#   git remote add origin your-github-repo-address
+#   git remote -v
+#
+# WEB HOSTING ON YOUR GITHUB REPO
+# --------------------------------------------------------------------------
+# Ensure that you enable GitHub Pages hosting in your MASTER repo:
+# Go to: Settings > Options > GitHub Pages > Source
+# Choose Source option: master/docs
+
+# build the sphinx-docs using MAKEFILE
+echo "Building LatexPDF and HTML targets to directory: _build/"
+make clean
+make latexpdf
+make html
+
+# Change target _build/html directory to docs/ so GitHub can render HTML content
+echo "Now renaming target directory _build/ as docs/"
+mv _build/html/ docs/
+
+# Change directory to docs/ and add a .nojekyll file to trick out GitHub's Jekyll default style
+echo "Adding a .nojekyll flag"
+cd docs/ && touch .nojekyll
+cd ../
+
+# Add, commit and push up to GitHub
+echo "Syncing to GitHub"
+git add .
+git commit -m "Push it, push it some more"
+git push origin master
+echo "Goodnight, and good luck"
