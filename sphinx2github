@@ -4,7 +4,7 @@
 #
 # ON YOUR LOCAL MACHINE
 # --------------------------------------------------------------------------
-# Warning: Anthropomorphisms abound!
+# Warning: Anthropomorphisms abound! Tested on GNU/Linux only.
 #
 # This BASH script assumes you have your current directory preset as "origin"
 # for your remote master repo. If not do this:
