@@ -4,22 +4,25 @@ BASH script to automate Sphinx-doc publishing and hosting on Github pages
 
 * Save this script to your current current Sphinx-doc project source directory
 
-* Script presumes you want to build latexpdf and html targets only (you can customize this more)
+* Script presumes you want to build ``latexpdf`` and ``html`` targets only (you can customize this more)
 
 This script assumes you have initialized your directory and set it as origin for your remote repo (check it):
 
-git remote add origin your-repo-address
-git remote -v
+| ``git remote add origin your-repo-address``
+
+You can check if it exists:
+
+| ``git remote -v``
 
 **What this script does**
 
-* Build sphinx-doc target outputs (latexpdf, html) to default _build/ directory
+* Build sphinx-doc target outputs (``latexpdf``, ``html``) to default ``_build/ directory``
 
-* Move the directory _build/html/ to docs/
+* Move the directory ``_build/html/`` to ``docs/``
 
-* Add a .nojekyll flag-file to disable GitHub Page's default Jekyll stylesheet
+* Add a ``.nojekyll`` flag-file to disable GitHub Page's default Jekyll stylesheet
 
-* Add new content, commit and push to your master repo, including sub-directory docs/ that hosts your html files
+* Add new content, commit and push to your master repo, including sub-directory ``docs/`` that hosts your HTML files
 
 **Warning**
 
