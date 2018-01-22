@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# (c) 2018, PhatoMachine@github.com
+#
 # ON YOUR LOCAL MACHINE
 # --------------------------------------------------------------------------
 # This BASH script assume you have your current directory preset as "origin"
