@@ -8,11 +8,11 @@ BASH script to automate Sphinx-doc publishing and hosting on Github pages
 
 This script assumes you have initialized your directory and set it as origin for your remote repo (check it):
 
->> ``git remote add origin your-repo-address``
+> ``git remote add origin your-repo-address``
 
 You can check if it exists:
 
->> ``git remote -v``
+> ``git remote -v``
 
 **What this script does**
 
