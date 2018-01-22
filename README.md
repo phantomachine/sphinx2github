@@ -2,7 +2,7 @@
 
 BASH script to automate Sphinx-doc publishing and hosting on Github pages
 
-* Save this script your current current Sphinx-doc project source directory
+* Save this script to your current current Sphinx-doc project source directory
 
 * Script presumes you want to build latexpdf and html targets only (you can customize this more)
 
