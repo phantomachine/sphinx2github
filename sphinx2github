@@ -4,7 +4,9 @@
 #
 # ON YOUR LOCAL MACHINE
 # --------------------------------------------------------------------------
-# This BASH script assume you have your current directory preset as "origin"
+# Warning: Anthropomorphisms abound!
+#
+# This BASH script assumes you have your current directory preset as "origin"
 # for your remote master repo. If not do this:
 #
 #   git init
